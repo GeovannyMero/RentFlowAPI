@@ -1,6 +1,5 @@
-
 from fastapi import FastAPI
-
+from app.routers.departmets_route import department
 
 app = FastAPI(
      title="Gestión de departamentos API",
@@ -8,6 +7,8 @@ app = FastAPI(
     version="1.0.0"
 )
 
-@app.get("/")
-def home():
-    return {"message": "Hola"}
+app.include_router(department)
+
+# @app.get("/")
+# def home():
+#     return {"message": "Hola"}
