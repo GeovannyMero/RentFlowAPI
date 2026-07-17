@@ -1,0 +1,49 @@
+# Entorno virtual
+env/
+venv/
+.venv/
+
+# Variables de entorno
+.env
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Extensiones compiladas
+*.so
+
+# Distribución / empaquetado
+build/
+dist/
+*.egg-info/
+
+# Caché de pruebas
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Caché de herramientas
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# Archivos de VS Code
+.vscode/
+
+# Archivos de PyCharm
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# SQLite (si llegas a usarla)
+*.sqlite3
+
+# Archivos temporales
+*.tmp
