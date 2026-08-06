@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.routers.departmets_route import department
+from app.routers.autentication_route import auth_route
 
 app = FastAPI(
      title="Gestión de departamentos API",
@@ -8,6 +9,7 @@ app = FastAPI(
 )
 
 app.include_router(department)
+app.include_router(auth_route)
 
 # @app.get("/")
 # def home():
