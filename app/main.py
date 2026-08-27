@@ -11,6 +11,6 @@ app = FastAPI(
 app.include_router(department)
 app.include_router(auth_route)
 
-# @app.get("/")
-# def home():
-#     return {"message": "Hola"}
+@app.get("/")
+def health_check():
+    return {"status": "ok", "message": "API corriendo correctamente"}
